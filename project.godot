@@ -13,6 +13,7 @@ config_version=5
 config/name="TryingLineDrawing"
 run/main_scene="uid://dm38i6qdws1m6"
 config/features=PackedStringArray("4.6", "Mobile")
+boot_splash/bg_color=Color(0, 0, 0, 0)
 config/icon="res://Assets/icon.svg"
 
 [debug]
@@ -30,8 +31,9 @@ gdscript/warnings/missing_await=1
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/size/initial_position_type=0
-window/size/always_on_top=true
+window/size/mode=3
+window/size/transparent=true
+window/per_pixel_transparency/allowed=true
 
 [physics]
 
@@ -41,4 +43,5 @@ window/size/always_on_top=true
 
 renderer/rendering_method="mobile"
 anti_aliasing/quality/msaa_2d=1
-environment/defaults/default_clear_color=Color(0, 0, 0, 1)
+environment/defaults/default_clear_color=Color(0, 0, 0, 0)
+viewport/transparent_background=true
